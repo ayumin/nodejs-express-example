@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const butter = require('buttercms')('e389441bfb10ccd3228e5adb47ccb98a8183eca7');
+const butter = require('buttercms')(process.env.BUTTER_TOKEN);
 const app = express()
 
 app.use(express.static('public'))
